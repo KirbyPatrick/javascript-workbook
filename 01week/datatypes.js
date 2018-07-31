@@ -1,71 +1,71 @@
+// // 1 have js call down number month.
 
-//write a function that returns the sum of two numbers if both arguments are numbers 
-const numberSum=(num1, num2)=> {
-    console.log(isNaN('hello'), isNaN('5'))
-    if(num1 && num2 && !isNaN(num1) && !isNaN(num2)){
-    console.log('both are nums')
-    return Number(num1) + Number(num2)
-  }
-  }
-  
-  console.log(numberSum(10,12))
+const date = new Date();
+
+const month = date.getMonth(); 
+
+// add 1 to number month bc it starts with 0
+
+const newMonth = month + 1;
+
+// have js call down number date
+
+const numberDate = date.getDate();
+
+// have js call down number year
+
+const year = date.getFullYear();
+
+// // print it all together using console.log and seperate with "/" as a string
+
+const test1 = newMonth + "/" + numberDate + "/" + year;
+
+console.log(test1)
+
+// //2 number to string:  set a const and have it equal a number.  Use toString() method to convert the number to string.  
+
+const num = 15;
+
+num.toString();
+
+//3 string to number:  use parseint
+
+const numString = (stringParamater) => parseInt(stringParamater);
+
+numString("5");
+
+// // 4 console.log typeOf
 
 
+// //5  Create a function that has 2 paramaters, each representing a different number.  withing the {} of that function (or whatever the new syntax version of that is) tell the funtion to add the first paramater with the second one.  
 
-//write a function that returns 'both are true' if both arguments are true.  creat a function stored in a const.  set two paramaters and then write a block of code compairing the truthyness of them with an if statement.  console log the results.  
+const addTwoNumbers = (num1, num2) => num1 + num2;
 
+addTwoNumbers(44, 58);
 
-const bothAreTrue=(arg1, arg2)=>{
-    if(arg1 && arg2){
-      console.log(102);
-    }
-  }
-  
-  console.log(bothAreTrue(11,'whats up'))
+// 6  write an if statement with two conditions, seperated by '&&'
 
+const example1 = 5;
+const example2 = 8;
 
-  
+if(example1 && example2){
+   console.log(22)
+}
 
+//7  do the same as above, but replace '&&' with '||'
 
-// //write a function that takes 3 paramaters and if all 3 parameters are strings, return true.  Do this via an if statment. 
+const example3 = null;
+const example4 = 5;
 
-const stringTest=(paramater1, paramater2, paramater3)=>{
-    if (typeof paramater1 == "string" && typeof paramater2 == "string" && typeof paramater3 == "string"){
-      return true;
-    }
-  };
-  
-  stringTest("hi", "yes", "no");
-  
-  
+if(example3 || example4){
+  console.log("hi")
+};
 
-// //write a switch statement that evaluates a variable month and for each of the 12 months,returns the number of days in that month.  Group the months in the switch statment by how many days they have and seperate each group with a break.  
+//8  same as number 6, but use the ! to indicate the program should run when the thing after the '=' is not true
 
-const daysInMonths=(month)=>{
-    switch(month){
-      case 'January':
-      case 'March':
-      case 'May':
-      case 'July':
-      case 'August':
-      case 'October':
-      case 'December':
-    
-      return 31;
-        break
-    
-      case 'April':
-      case 'June':
-      case 'September':
-      case 'November':
-    
-      return 30;
-      break;
-    
-      case 'February':
-      return 28;
-      break;
-    }
-    }
-    
-    console.log(daysInMonths('February'))
+const example5 = 5;
+const example6 = 6;
+
+if(example5 != example6){
+  console.log("howdy")
+};
