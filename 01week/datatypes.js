@@ -22,6 +22,18 @@ const test1 = newMonth + "/" + numberDate + "/" + year;
 
 console.log(test1)
 
+//do the same using the time methods
+
+const time = new Date();
+
+const hour = time.getHours();
+
+const mins = time.getMinutes();
+
+const currentTime = hour + ':' + mins; 
+
+console.log(currentTime);
+
 // //2 number to string:  set a const and have it equal a number.  Use toString() method to convert the number to string.  
 
 const num = 15;
